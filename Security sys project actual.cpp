@@ -12,9 +12,9 @@ int main()
 	cout<<"----------------------------"<<endl<<endl;
 	cout<<"\       1. REGISTER         \ "<<endl;
 	cout<<" \       2. LOGIN            \ "<<endl;
-    cout<<"  \       3. CHANGE PASSWORD  \ "<<endl;
-    cout<<"   \       4. END PROGRAM      \ "<<endl<<endl;
-    cout<<"    ---------------------------- "<<endl<<endl;
+        cout<<"  \       3. CHANGE PASSWORD  \ "<<endl;
+        cout<<"   \       4. END PROGRAM      \ "<<endl<<endl;
+        cout<<"    ---------------------------- "<<endl<<endl;
 do{
 	cout<<endl<<endl;
 	cout<<"Enter your choice :"<<endl;
@@ -23,7 +23,7 @@ do{
 	{
 		case 1:{
 	cout<<"---------------------------"<<endl<<endl;
-    cout<<"\       1. REGISTER         \ "<<endl;
+        cout<<"\       1. REGISTER         \ "<<endl;
 	cout<< "----------------------------"<<endl<<endl;
 	
 	cout<<"Please enter username-"<<endl;
@@ -48,13 +48,13 @@ do{
 			i=0;
 			cout<<"----------------------------- "<<endl<<endl;
 			cout<<" \       2. LOGIN            \ "<<endl;
-	        cout<<" ----------------------------- "<<endl<<endl;
+	                 cout<<" ----------------------------- "<<endl<<endl;
 	        
 	        ifstream of2;
 	        of2.open("file.txt");
 	        cout<<"Please enter username-";
 	        cin>>user;
-	        cout<<"Please enter password-";
+	        cout<<"Please enter a password-";
 	        cin>>pass;
 	        if(of2.is_open())
 	        {
@@ -69,7 +69,7 @@ do{
 					}
 					if(user==creds[0] && pass== creds[1])
 					{
-						cout<<"Log in successful";
+						cout<<"Login successful";
 						cout<<endl<<endl;
 						cout<<"Details:"<<endl;
 						cout<<"Username:"+name<<endl;
@@ -80,9 +80,9 @@ do{
 						cout<<endl<<endl;
 						cout<<"Incorrect Credentials"<<endl;
 						cout<<"------------------------------------- " << endl;
-			             cout<<"\       1. Press 2 to Login         \ " << endl;
-			            cout<<" \       2.Press 3 to Change Password \ " << endl;
-	                    cout<<"  ------------------------------------- " << endl;
+			                        cout<<"\       1. Press 2 to Login         \ " << endl;
+			                        cout<<" \       2.Press 3 to Change Password \ " << endl;
+	                                       cout<<"  ------------------------------------- " << endl;
 	                    break;
 					}
 				}		
